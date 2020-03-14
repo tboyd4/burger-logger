@@ -1,0 +1,7 @@
+CREATE DATABASE burger_logger_DB;
+
+CREATE TABLE burgers (
+	id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    burger_name VARCHAR(35) NOT NULL,
+    devoured BOOLEAN NOT NULL
+);
