@@ -1,9 +1,21 @@
 <h1>Hello. I am A test. Please see me.</h1>
 
 <div>
+    <h1>These are Not Devoured</h1>
     <ul>
         {{#each burgers}}
-            <li>{{burger_name}}</li>
+            {{#unless devoured}}
+                <li> {{burger_name}} <button>Devour</button></li>
+            {{/unless}}
+        {{/each}}
+    </ul>
+    <hr>
+    <h1>These are YES Devoured</h1>
+    <ul>
+        {{#each burgers}}
+            {{#if devoured}}
+                <li> {{burger_name}} </li>
+            {{/if}}
         {{/each}}
     </ul>
 </div>
