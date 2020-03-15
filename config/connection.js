@@ -5,11 +5,11 @@ var mysql = require("mysql");
 const keys = require('./keys');
 
 var connection = mysql.createConnection({
-  host: "localhost",
+  host: "dno6xji1n8fm828n.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
   port: 3306,
-  user: "root",
-  password: keys.databasePass,
-  database: "burger_logger_DB"
+  user: "vcoaxewsngygbx9z	",
+  password: "js3944rrir2e7sb9",
+  database: "ffh7jmhayq9zv7tu"
 });
 
 // Make connection.
