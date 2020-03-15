@@ -1,30 +1,37 @@
-<h1>Hello. I am A test. Please see me.</h1>
+<h1 class="center">Welcome to Burger Town!!</h1>
 
 
-<div class="create-burger-form">
-    <h1>Put Burger Name Here:</h1>
-    <input type="text" id="new_burger" placeholder="New Burger Goes Here Homie">
-    <button id="submit-btn">Submit Burger</button>
+<div class="create-burger-form row">
+    <div class="col-12 center">
+        <label>Add New Burger</label>
+        <input type="text" id="new_burger" placeholder="New Burger Name">
+        <button id="submit-btn" type="button" class="btn btn-secondary">Submit New Burger</button>
+    </div>
 </div>
 
 <hr>
 
-<div>
-    <h1>These are Not Devoured</h1>
-    <ul>
-        {{#each burgers}}
+<div class="burger-container row">
+    <div class="not-devoured col-6">
+        <h1>These are Not Devoured</h1>
+        <ul>
+            {{#each burgers}}
             {{#unless devoured}}
-                <li> {{burger_name}} <button data-id="{{id}}" class="devour">Devour</button></li>
+            <li> {{burger_name}} <button data-id="{{id}}" class="devour">Devour</button></li>
             {{/unless}}
-        {{/each}}
-    </ul>
-    <hr>
-    <h1>These are YES Devoured</h1>
-    <ul>
-        {{#each burgers}}
+            {{/each}}
+        </ul>
+    </div>
+
+    <div class="devoured col-6">
+        <h1>These are YES Devoured</h1>
+        <ul>
+            {{#each burgers}}
             {{#if devoured}}
-                <li> {{burger_name}} </li>
+            <li> {{burger_name}} </li>
             {{/if}}
-        {{/each}}
-    </ul>
+            {{/each}}
+        </ul>
+    </div>
+
 </div>

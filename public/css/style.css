@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 15px;
+    padding: 15px;
+    background-color: yellow;
+}
+
+.center {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    margin: 5px;
+    padding: 10px;
+}
+
+h1 {
+    margin: 15px;
+    padding: 15px;
+}
+
