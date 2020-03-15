@@ -1,8 +1,6 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
 
-// retrieve database password
-const keys = require('./keys');
 
 var connection = mysql.createConnection({
   host: "dno6xji1n8fm828n.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
